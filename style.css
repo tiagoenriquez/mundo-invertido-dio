@@ -1,0 +1,166 @@
+/***  FONTS ***/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+
+/***  VARIABLES & THEMES ***/
+
+:root {
+  --primary-color: #cf0f0f;
+  --primary-color-contrast: white;
+  --field-background-color: black;
+}
+
+.light-theme {
+  --page-background: linear-gradient(
+    180deg,
+    white 0%,
+    white 65%,
+    rgba(255, 255, 255, 0.75) 100%
+  );
+  --header-background-color: #e3e3e3;
+  --highlight-color: black;
+  --featured-font-family: "Archivo", sans-serif;
+  --character-top-image-src: url("./images/characters/kids-on-the-bike.svg");
+  --character-top-image-color: white;
+  --character-bottom-image-src: url("./images/characters/inverted-world-monster.svg");
+  --character-bottom-image-color: #e5e5e5;
+  --background-lamp-image: url("../images/backgrounds/lamps.png");
+  --footer-background-color: #b5bbbf;
+}
+
+.dark-theme {
+  --page-background: linear-gradient(
+    180deg,
+    #050000 0%,
+    #130404 65%,
+    rgba(19, 1, 1, 0.75) 100%
+  );
+  --header-background-color: #220f0f;
+  --highlight-color: white;
+  --featured-font-family: "Rubik Glitch", sans-serif;
+  --character-bottom-image-src: url("../images/characters/kids-on-the-bike.svg");
+  --character-bottom-image-color: rgba(255, 255, 255, 0.1);
+  --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
+  --character-top-image-color: black;
+  --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
+  --footer-background-color: black;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: var(--page-background);
+}
+
+header, main, #inverted-world-texts, #stranger-things-texts, #info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+head {
+  background-color: var(--header-background-color);
+}
+
+.world-characteres, #inverted-world, #pictures, footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  color: var(--highlight-color);
+  text-align: center;
+  width: 640px;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-family: var(--featured-font-family);
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 512px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px 32px;
+  text-transform: uppercase;
+}
+
+#header-button {
+  background: transparent;
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+#pictures {
+  left: 64px;
+  margin: 16px;
+}
+
+.picture {
+  border: 16px solid black;
+  height: 256px;
+  width: 256px;
+  margin: 4px;
+}
+
+form, #most-watched-images, #info-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#most-watched {
+  margin-left: 16px;
+}
+
+.lamps-container {
+  background-image: var(--background-lamp-image);
+  background-position: 0 -256px;
+  height: 512px;
+  width: 512px;
+}
+
+form {
+  background-color: var(--primary-color);
+  padding: 24px;
+}
+
+label {
+  color: white;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+input, textarea {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  margin-bottom: 24px;
+  padding: 6px;
+  width: 100%;
+}
+
+input:hover, input:active, textarea:hover, textarea:active {
+  border: 1px solid black;
+}
+
+#form-button {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: var(--footer-background-color);
+}

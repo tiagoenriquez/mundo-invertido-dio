@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mundo Invertido</title>
+</head>
+<body class="light-theme">
+    <header>
+        <div id="info-header">
+            <img src="./images/banner/logo.svg" alt="Mundo Invertido">
+            <p>Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo invertido é incerto, 
+                repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. 
+                Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido! </p>
+            <button id="header-button" onclick="changeWorld()">Inverter mundos</button>
+        </div>
+    </header>
+    <main>
+        <section id="inverted-world" class="world-characteres">
+            <section id="inverted-world-texts">
+                <h2>O mundo invertido</h2>
+                <p> O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades 
+                    assustadoras, muita escuridão e entidades malignas. Um reino controlado por Vecna, que tem planos de trazer 
+                    tudo isso ao nosso mundo. </p>
+            </section>
+            <img src="./images/content/inverted-world.png" alt="Mundo invertido">
+        </section>
+        <section id="stranger-things" class="world-characteres">
+            <iframe
+                width="460"
+                height="215"
+                src="https://www.youtube.com/embed/otutSrxYpa4?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            <section id="stranger-things-texts">
+                <h2>Stranger Things Vol. 4</h2>
+                <p>Mais experientes, os heróis de Stranger Things também precisam enfrentar desafios maiores do 
+                    que nunca e fazer decisões que vão mudar suas vidas para sempre. Confira ao lado o trailer da quarta temporada.
+                </p>
+            </section>
+        </section>
+        <section id="most-watched"  class="world-characteres">
+            <section id="most-watched-images">
+                <h2 id="most-watched-heading">A segunda série mais assistida na Netflix</h2>
+                <div id="pictures">
+                    <img src="./images/content/serie-image-01.png" alt="Imagem 1" class="picture">
+                    <img src="./images/content/serie-image-02.png" alt="Imagem 2" class="picture">
+                    <img src="./images/content/serie-image-03.png" alt="Imagem 3" class="picture">
+                </div>
+            </section>
+            <div class="lamps-container"></div>
+        </section>
+        <h2>O clube Dungeons & Dragons</h2>
+        <p> Para deter Vecna, os heróis de Stranger Things também precisam de você. O Clube de D&D mais famoso 
+            de Hawkings está com vagas abertas para sua próxima aventura. Se você é destemido, gosta de desafios e não tem medo de 
+            rodar o D20, chegou a hora de se inscrever para fazer parte da nova campanha. </p>
+        <section id="form" class="world-characteres">
+            <h2 id="form-heading">Entre para o clube de D&D e tenha experiências de outro mundo</h2>
+            <form action="#" method="get">
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="level">Nível</label>
+                <input type="text" name="level" id="level">
+                <label for="persona">Personagem</label>
+                <textarea rows="10" cols="70" name="persona" id="persona"></textarea>
+                <button id="form-button">Me inscrever</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="./images/footer/tape.svg" alt="fita" class="tape">
+        <div id="info-footer">
+            <p> Projeto construído para fins didáticos, com o objetivo de colocar em prática os conhecimentos 
+                de HTML, CSS e JavaScript aprendidos na DIO._ </p>
+            <img src="./images/footer/logo(1).svg" alt="Digital Innovation One" id="logo-footer">
+        </div>
+        <img src="./images/footer/tape.svg" alt="fita" class="tape">
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
